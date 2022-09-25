@@ -1,0 +1,6 @@
+{
+    "robot.language-server.python": "/usr/bin/python3",
+    "robot.language-server.args": [
+    
+    ]
+}

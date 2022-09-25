@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220922 15:30:35.365" rpa="false" schemaversion="3">
+<suite id="s1" name="Chico" source="/home/natali/Downloads/testwithRobot/chico.robot">
+<test id="s1-t1" name="Processo de compra de uma camiseta &quot; Amarelo é Desespero&quot; no site do Chico Rei" line="8">
+<kw name="Abrir navegador e clicar em &quot;Concordar&quot; no aviso sobre Cookies" library="chico">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220922 15:30:36.261" level="INFO">Opening browser 'googlechrome' to base url 'https://chicorei.com/'.</msg>
+<status status="PASS" starttime="20220922 15:30:36.260" endtime="20220922 15:30:43.857"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220922 15:30:43.858" endtime="20220922 15:30:44.430"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CONCORDAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 15:30:44.432" level="INFO">Clicking element '//button[@id='confirmPolicyButton']'.</msg>
+<status status="PASS" starttime="20220922 15:30:44.431" endtime="20220922 15:30:46.602"/>
+</kw>
+<status status="PASS" starttime="20220922 15:30:36.252" endtime="20220922 15:30:46.603"/>
+</kw>
+<kw name="Pesquisar por &quot;Amarelo é desespero&quot; e selecionar a primeira opção da lista de resultados" library="chico">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CAMPO PESQUISAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 15:30:46.605" level="INFO">Clicking element '//*[@id="header-search-input-desktop"]'.</msg>
+<status status="PASS" starttime="20220922 15:30:46.604" endtime="20220922 15:30:47.727"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO PESQUISAR}</arg>
+<arg>${AMARELO DESESPERO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220922 15:30:47.729" level="INFO">Typing text 'Amarelo é desespero' into text field '//*[@id="header-search-input-desktop"]'.</msg>
+<status status="PASS" starttime="20220922 15:30:47.728" endtime="20220922 15:30:48.543"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220922 15:30:55.544" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20220922 15:30:48.543" endtime="20220922 15:30:55.545"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CLICA RESULTADO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 15:30:55.546" level="INFO">Clicking element '//*[@id="header-search-desktop"]/form/div/div/div/div[1]/div/div[2]/div[1]'.</msg>
+<msg timestamp="20220922 15:30:56.795" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220922 15:30:56.803" level="FAIL">Element with locator '//*[@id="header-search-desktop"]/form/div/div/div/div[1]/div/div[2]/div[1]' not found.</msg>
+<status status="FAIL" starttime="20220922 15:30:55.545" endtime="20220922 15:30:56.817"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${CAMPO PESQUISAR}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20220922 15:30:56.818" endtime="20220922 15:30:56.818"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220922 15:30:56.818" endtime="20220922 15:30:56.818"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CLICA RESULTADO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220922 15:30:56.819" endtime="20220922 15:30:56.819"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220922 15:30:56.819" endtime="20220922 15:30:56.819"/>
+</kw>
+<status status="FAIL" starttime="20220922 15:30:46.604" endtime="20220922 15:30:56.820"/>
+</kw>
+<kw name="Validar o valor do produto" library="chico">
+<status status="NOT RUN" starttime="20220922 15:30:56.821" endtime="20220922 15:30:56.821"/>
+</kw>
+<kw name="Selecionar um tamanho, cor e clicar em comprar" library="chico">
+<status status="NOT RUN" starttime="20220922 15:30:56.822" endtime="20220922 15:30:56.830"/>
+</kw>
+<kw name="Clicar em &quot;Ver sacola&quot;" library="chico">
+<status status="NOT RUN" starttime="20220922 15:30:56.830" endtime="20220922 15:30:56.833"/>
+</kw>
+<kw name="Validar se a mensagem &quot;Sua sacola&quot; está sendo exibida" library="chico">
+<status status="NOT RUN" starttime="20220922 15:30:56.833" endtime="20220922 15:30:56.834"/>
+</kw>
+<kw name="Clicar em &quot;Fechar pedido&quot;" library="chico">
+<status status="NOT RUN" starttime="20220922 15:30:56.834" endtime="20220922 15:30:56.838"/>
+</kw>
+<status status="FAIL" starttime="20220922 15:30:36.246" endtime="20220922 15:30:56.842">Element with locator '//*[@id="header-search-desktop"]/form/div/div/div/div[1]/div/div[2]/div[1]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220922 15:30:35.378" endtime="20220922 15:30:56.870"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Chico">Chico</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
